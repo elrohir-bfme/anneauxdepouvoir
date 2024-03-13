@@ -1,7 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxt/image", "@nuxt/content", "@nuxtjs/sitemap"],
+  site: {
+    indexable: true,
+    url: "https://anneauxdepouvoir.fr",
+  },
+  modules: [
+    "@nuxt/ui",
+    "@nuxt/image",
+    "@nuxt/content",
+    "nuxt-simple-robots",
+    "@nuxtjs/sitemap",
+  ],
   content: {
     markdown: {
       toc: {
@@ -10,7 +19,6 @@ export default defineNuxtConfig({
       },
       remarkPlugins: ["remark-reading-time"],
     },
-    documentDriven: true,
   },
   ui: {
     global: true,

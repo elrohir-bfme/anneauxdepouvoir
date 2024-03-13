@@ -3,9 +3,14 @@
     class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900"
   >
     <NuxtLoadingIndicator />
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <div class="min-h-screen w-full flex flex-col">
+      <LayoutsHeader />
+      <LayoutsSidebar />
+      <main class="grow">
+        <NuxtPage />
+      </main>
+      <LayoutsFooter />
+    </div>
     <UNotifications />
   </div>
 </template>
