@@ -31,7 +31,7 @@ const { toggleIsOpenSideBar } = useLayout();
       <div class="flex items-center space-x-2">
         <UtilsThemeChanger />
         <UButton
-          to="https://google.fr"
+          to="https://laterredumilieu.fr/Discord"
           icon="i-simple-icons-discord"
           size="sm"
           color="blue"

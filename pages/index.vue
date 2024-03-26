@@ -56,7 +56,7 @@
       <iframe
         title="Dernière vidéo d'Elrohir"
         class="w-full aspect-video animate-fade-up"
-        src="https://www.youtube.com/embed?listType=playlist&list=PLy4hW4CmHHNQSWNd9ztx-3pOcgjtA6uJK&index=1"
+        src="https://www.youtube.com/embed/TjPvSyKHINA?si=GbLuCjlXp__mh_XV"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen

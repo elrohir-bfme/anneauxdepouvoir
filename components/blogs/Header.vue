@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import type { CustomParsedContent } from "@/types/post";
 
-defineProps<{
+const props = defineProps<{
   content: CustomParsedContent;
 }>();
+
+const timeToRead = computed(() =>
+  props.content.readingTime.text.replace("read", "de lecture")
+);
 </script>
 <template>
   <div class="mb-8">
@@ -37,7 +41,7 @@ defineProps<{
       </div>
       <div class="mx-auto" />
       <div class="dark:text-stone-400 text-stone-500">
-        {{ content?.readingTime.text }}
+        {{ timeToRead }}
       </div>
     </div>
   </div>
