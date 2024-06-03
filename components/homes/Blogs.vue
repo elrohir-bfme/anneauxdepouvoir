@@ -8,7 +8,7 @@ const { data } = await useAsyncData(
       .sort({
         date: -1,
       })
-      .limit(3)
+      .limit(6)
       .find()
 );
 </script>
