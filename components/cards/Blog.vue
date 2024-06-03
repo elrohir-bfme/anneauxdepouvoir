@@ -22,7 +22,7 @@ const timeToRead = computed(() =>
         />
         <NuxtImg
           v-if="content.image?.path"
-          class="w-full h-full hover:scale-125 transition duration-200 cursor-pointer"
+          class="mx-auto hover:scale-125 transition duration-200 cursor-pointer"
           :alt="content.title"
           :src="content.image.path"
         />

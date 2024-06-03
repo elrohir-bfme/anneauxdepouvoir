@@ -1,9 +1,26 @@
 <template>
+  <HomesBlogs />
+
+  <section class="py-10 lg:py-20 bg-[url('/images/valinor_full.jpg')] bg-cover">
+    <UContainer>
+      <iframe
+        title="Dernière vidéo d'Elrohir"
+        class="w-full aspect-video animate-fade-up"
+        src="https://www.youtube.com/embed/TjPvSyKHINA?si=GbLuCjlXp__mh_XV"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </UContainer>
+  </section>
+
   <section class="py-10 lg:py-20">
     <UContainer
       class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <div
+        class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 overflow-hidden"
+      >
         <NuxtImg
           class="animate-fade-right object-cover object-center rounded-3xl ring-2 ring-primary"
           alt="Vardamire"
@@ -50,19 +67,4 @@
       </div>
     </UContainer>
   </section>
-
-  <section class="py-10 lg:py-20 bg-[url('/images/valinor_full.jpg')] bg-cover">
-    <UContainer>
-      <iframe
-        title="Dernière vidéo d'Elrohir"
-        class="w-full aspect-video animate-fade-up"
-        src="https://www.youtube.com/embed/TjPvSyKHINA?si=GbLuCjlXp__mh_XV"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
-    </UContainer>
-  </section>
-
-  <HomesBlogs />
 </template>
