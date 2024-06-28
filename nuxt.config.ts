@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "nuxt-simple-robots",
     "@nuxtjs/sitemap",
+    "@nuxthq/studio"
   ],
   content: {
     markdown: {
