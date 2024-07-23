@@ -14,7 +14,7 @@ const { data } = await useAsyncData(
 </script>
 
 <template>
-  <section class="py-10 lg:py-20 animate-fade-right">
+  <section class="pb-10 pt-1 animate-fade-right">
     <UContainer>
       <div class="flex justify-between">
         <h2 class="text-3xl font-bold capitalize lg:mb-8 mb-4">

@@ -1,4 +1,6 @@
 <template>
+  <HomesTimer />
+
   <HomesBlogs />
 
   <section class="py-10 lg:py-20 bg-[url('/images/valinor_full.jpg')] bg-cover">
