@@ -2,21 +2,28 @@
   <section class="mt-14 py-3 animate-fade-right">
     <UContainer>
       <div class="text-center p-4">
-        <p v-if="daysLeft > 1" class="text-xl font-bold text-primary">
-          <span class="underline">{{ daysLeft }} jours</span> avant la saison 2
-          des Anneaux de Pouvoir
+        <p
+          v-if="
+            daysLeft > 0 || hoursLeft > 0 || minutesLeft > 0 || secondsLeft > 0
+          "
+          class="text-xl font-bold text-primary"
+        >
+          <span class="underline"
+            >{{ daysLeft }} jours, {{ hoursLeft }} heures,
+            {{ minutesLeft }} minutes et {{ secondsLeft }} secondes</span
+          >
+          avant la saison 2 des Anneaux de Pouvoir
         </p>
-        <p v-else-if="hoursLeft > 1" class="text-xl font-bold text-primary">
-          <span class="underline">{{ hoursLeft }} heures</span> avant la saison
-          2 des Anneaux de Pouvoir
-        </p>
-        <p v-else-if="minutesLeft > 1" class="text-xl font-bold text-primary">
-          <span class="underline">{{ minutesLeft }} minutes</span> avant la
-          saison 2 des Anneaux de Pouvoir
-        </p>
-        <p v-else-if="secondsLeft > 0" class="text-xl font-bold text-primary">
-          <span class="underline">{{ secondsLeft }} secondes</span> avant la
-          saison 2 des Anneaux de Pouvoir
+        <p
+          v-if="
+            daysLeft >= 0 &&
+            hoursLeft >= 0 &&
+            minutesLeft >= 0 &&
+            secondsLeft >= 0
+          "
+          class="text-lg mt-2"
+        >
+          Le jeudi 29 août 2024 à 10h00
         </p>
         <p v-else class="text-xl font-bold text-primary">
           La saison 2 des Anneaux de Pouvoir est maintenant disponible sur Prime
@@ -30,7 +37,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 
-// Date de sortie de la saison 2 des Anneaux de Pouvoir
+// Date de sortie de la saison 2 des Anneaux de Pouvoir (29 août 2024 à 08:00 UTC)
 const releaseDate = new Date(Date.UTC(2024, 7, 29, 8, 0, 0));
 
 // Variables pour le temps restant
