@@ -27,4 +27,9 @@ export const Menus: Menu[] = [
     key: "saison-1",
     to: "/saison-1",
   },
+  {
+    name: "Saison 2",
+    key: "saison-2",
+    to: "/saison-2",
+  },
 ];

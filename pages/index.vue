@@ -1,6 +1,19 @@
 <template>
   <HomesTimer />
 
+  <UContainer class="max-w-5xl">
+    <a
+      href="https://www.twitch.tv/elrohir_bfme"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="/assets/conseil-tdm-28-08-2024.jpg"
+        class="w-full rounded-lg transition-transform duration-300 transform hover:scale-105 hover:opacity-90"
+      />
+    </a>
+  </UContainer>
+
   <HomesBlogs />
 
   <section class="py-10 lg:py-20 bg-[url('/images/valinor_full.jpg')] bg-cover">
@@ -64,6 +77,12 @@
             class="ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg"
           >
             Saison 1
+          </UButton>
+          <UButton
+            to="/saison-2"
+            class="ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg"
+          >
+            Saison 2
           </UButton>
         </div>
       </div>
